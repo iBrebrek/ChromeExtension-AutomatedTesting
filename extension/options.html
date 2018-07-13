@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>RPPP Extension Options</title>
+  <script type="text/javascript" src="scripts/fileWorker.js"></script>
+  <script type="text/javascript" src="scripts/parser.js"></script>
+  <script type="text/javascript" src="scripts/options.js"></script>
+  <link rel="stylesheet" href="options.css">
+  <link rel="stylesheet" href="tabs_style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="tab">
+      <button id="openGeneral" tab="general" class="tablinks">Razno</button>
+      <button id="openFiles" tab="files" class="tablinks">Import/Export</button>
+    </div>
+  </header>
+
+  <div id="general" class="tabcontent">
+    <h1>Testiranje</h1>
+    <label>
+      Klasa gumbova/linkova za straničenje:<br>
+      <input id="paging-class"></input><br>
+    </label><br>
+    <label>
+      Klasa gumbova/linkova za ažuriranje:<br>
+      <input id="edit-class"></input><br>
+    </label><br>
+    <label>
+      Klasa gumbova/linkova za brisanje:<br>
+      <input id="delete-class"></input><br>
+    </label><br>
+    <label>
+      Maksimalno strana pri testiranju straničenja: (-1 ako neograničeno)<br>
+      <input type="number" id="paging-max"></input><br>
+    </label><br>
+    <button id="save-testers">Spremi vrijednosti za testiranje</button>
+
+    <br><br>
+
+    <h1>Ispunjavanje formi</h1>
+    <label>
+      Broj slova pri generiranju teksta:<br>
+      <input type="number" id="form-textlen"></input><br>
+    </label><br>
+    <label>
+      Minimalan broj pri generiranju broja:<br>
+      <input type="number" id="form-min"></input><br>
+    </label><br>
+    <label>
+      Maksimalan broj pri generiranju broja:<br>
+      <input type="number" id="form-max"></input><br>
+    </label><br>
+    <button id="save-forms">Spremi vrijednosti za popunjavanje formi</button>
+  
+  </div>
+  
+  <div id="files" class="tabcontent">
+
+    <h3>Inicijalizacija podataka</h3>
+    <i>separator je tab</i>
+  
+    <div class="options">
+      <button id="importTests">Učitaj testove</button>
+      <button id="importStudents">Učitaj studente</button>
+    </div>
+  
+  
+    <h3>Lokalni podatci</h3>
+  
+    <div class="options">
+      <button id="exportJSON">Preuzmi lokalne podatke (JSON)</button>
+      <button id="importJSON">Postavi lokalne podatke (JSON)</button>
+    </div>
+  
+  
+    <h3>Izvještaj</h3>
+    <i>separator je ; (točka zarez)</i>
+  
+    <div class="options">
+      <button id="report">Preuzmi izvještaj (csv)</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

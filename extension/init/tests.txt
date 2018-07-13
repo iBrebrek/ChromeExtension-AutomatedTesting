@@ -1,0 +1,23 @@
+			
+			
+			
+	Jednostavni tablični prikaz	1,5	Jednostavni prikaz podataka iz neke tablice (npr. šifrarničke tablice) s dodanim poveznicama (ikonama) za ažuriranje i brisanje (poveznice ne moraju funkcionirati, ali moraju postojati). Kod podataka koji imaju strani ključ umjesto vrijednosti stranog ključa prikazati odgovarajući naziv iz roditeljske tablice.
+	Straničenje i sortiranje u jednostavnom tabličnom prikazu	0,5	Prikaz tabličnih podataka po stranicama i mogućnost sortiranja, neovisno o izvedbi.
+	Straničenje i sortiranje na serverskoj strani	1	Izvedba sortiranja i straničenja na serveru. Obratiti pažnju na povratak na željenu stranicu nakon ažuriranja i brisanja. Smije se koristiti tag-helper izrađen na predavanjima.
+	Dodavanje novog podatka	1	Dodavanje novog podatka uz pripremu poruke o rezultatu dodavanja
+	Ažuriranje jednostavnog podatka	1,5	Ažuriranje pojedinačnog podatka
+	Brisanje podatka	1	Brisanje podatka uz pripremu poruke o rezultatu brisanja
+	Potvrda prije brisanja podatka	0,5	Popup dijalog kojim se korisnika pita je li siguran da želi obrisati podatak
+			
+	Složeni tablični prikaz	1,5	Tablični Master-detail prikaz. Prikaz n složenih podataka te povezanih podataka za svaki od pojedinačnih podataka (npr. tablični prikaz galakasija pri čemu se osim ključnih podataka o galaksiji pored svake od njih prikazuje i popis svih planeta). Za povezane podatke, dovoljno je ispisati samo naziv bez drugih detalja.
+	Prikaz pojedinačnog složenog podatka	1,5	Pojedinačni master-detail prikaz. Prikaz svih svojstava pojedinačnog složenog podatka i njegovih povezanih n stavki (npr. galaksija i planeti). Nije potrebno implementirati izmjenu podataka. Na ovu stranicu se dolazi iz tabličnog prikaza (jednostavnog ili složenog) te po povratku obratiti pažnju na povratak na istu stranicu. Za razliku od prikaza u složenom tabličnom prikazu, prikazati sve atributi povezanih detalja.
+	Validacija	1	Provjera valjanosti unesenih podataka. Koristiti validacijske atribute. Nije potrebno implementirati složena validacijska pravila.
+	Odabir vrijednosti vezanih podataka korištenjem padajuće liste	1,5	Padajuće liste za odabir vrijednosti stranog ključa kod ažuriranja, odnosno naziv umjesto identifikatora u običnom prikazu
+			
+			
+Glavni izbornik		0,5	Glavna stranica s navigacijom, koja sadrži linkove na pojedinačne stranice članova ekipe. Korištenjem meta-tagova (objašnjenje naknadno) navesti tko je što radio
+Statusna poruka		0,5	Okvir za prikaz statusne poruke, npr. prilikom preusmjeravanja kod brisanja i slično
+Konfiguracijska datoteka		0,5	Dohvat postavki za spajanje na bazu podataka umjesto tvrdo kodiran premješten u konfiguracijsku datoteku
+	Robusnost aplikacije	1	Ugrađenost obrade iznimki na svim mjestima koja mogu uzrokovati iznimku (npr. pri radu s bazom podataka)
+			
+			

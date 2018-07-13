@@ -1,0 +1,44 @@
+
+select, input, textarea, body, button {
+    font-size: 13px;
+}
+
+input {
+    width: 48px;
+}
+
+#tableContainer {
+    overflow: auto;
+    max-height: 500px;
+    width: 1500px;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+}   
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+thead {
+    background: rgb(135, 211, 207);
+    color: black;
+}
+
+thead td {
+    text-align: center;
+}
+
+thead .selected {
+    color: red;
+    cursor: pointer;
+}
+
+thead .unselected {
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+{
+	"name": "RPPP",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Testing Web pages for RPPP",
+
+	"options_ui": {
+    "page": "options.html",
+		"chrome_style": true,
+		"open_in_tab" : true 
+  },
+
+	"permissions": [
+		"storage",
+		"unlimitedStorage"
+	],
+	
+	"icons": {
+	  "128": "icons/main.png"
+	},
+	
+	"content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+				"js": ["scripts/content/utils.js", "scripts/content/pageChanger.js", 
+					"scripts/content/testers/tester.js", "scripts/content/testers/createTester.js", "scripts/content/testers/validateTester.js", 
+					"scripts/content/testers/editTester.js", "scripts/content/testers/paginationTester.js", "scripts/content/testers/deleteTester.js",
+					"scripts/content/testers/compositeTester.js", "scripts/content/content.js"]
+      }
+    ],
+	
+	"background" : {
+			"scripts": ["scripts/parser.js", "scripts/background/initialization.js", "scripts/background/clear.js",
+				 "scripts/background/background.js", "scripts/background/testerHelper.js"],
+	  "persistent": false
+	},
+	
+	"page_action": {
+	  "default_icon" : "icons/main.png",
+	  "default_popup": "popup.html"
+	}
+}
